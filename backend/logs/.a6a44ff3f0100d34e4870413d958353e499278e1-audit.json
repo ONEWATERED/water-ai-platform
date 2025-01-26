@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/Users/apas/CascadeProjects/multimodule-webapp/backend/logs/.a6a44ff3f0100d34e4870413d958353e499278e1-audit.json",
+    "files": [
+        {
+            "date": 1737857032307,
+            "name": "/Users/apas/CascadeProjects/multimodule-webapp/backend/logs/combined-2025-01-25.log",
+            "hash": "f8dffa62d560e12965bbdbeb8a5d2124ca83c9cbc7b3bce7e0dc0c3af8393ef9"
+        }
+    ],
+    "hashType": "sha256"
+}

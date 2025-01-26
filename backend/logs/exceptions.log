@@ -1,0 +1,4352 @@
+2025-01-25 21:03:52 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:03:52 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 58746,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 74268672,
+      "heapTotal": 31686656,
+      "heapUsed": 18936552,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.8759765625,
+      2.890625,
+      2.9814453125
+    ],
+    "uptime": 518431
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:03:52 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:03:52 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 58747,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 75137024,
+      "heapTotal": 31424512,
+      "heapUsed": 18854624,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.8759765625,
+      2.890625,
+      2.9814453125
+    ],
+    "uptime": 518431
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:03:52 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:03:52 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 58748,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 74252288,
+      "heapTotal": 31424512,
+      "heapUsed": 18908432,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.8759765625,
+      2.890625,
+      2.9814453125
+    ],
+    "uptime": 518431
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:03:52 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:03:52 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 58745,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 74563584,
+      "heapTotal": 31424512,
+      "heapUsed": 18834240,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.8759765625,
+      2.890625,
+      2.9814453125
+    ],
+    "uptime": 518431
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:16:04 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:16:04 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59194,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 72908800,
+      "heapTotal": 31948800,
+      "heapUsed": 17604984,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.0166015625,
+      2.19287109375,
+      2.56005859375
+    ],
+    "uptime": 519163
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:16:04 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:16:04 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59195,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 74301440,
+      "heapTotal": 31686656,
+      "heapUsed": 17515200,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.0166015625,
+      2.19287109375,
+      2.56005859375
+    ],
+    "uptime": 519163
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:16:04 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:16:04 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59193,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 72204288,
+      "heapTotal": 31948800,
+      "heapUsed": 17568440,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.0166015625,
+      2.19287109375,
+      2.56005859375
+    ],
+    "uptime": 519163
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:16:04 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:16:04 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59192,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 71991296,
+      "heapTotal": 32210944,
+      "heapUsed": 17435600,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.0166015625,
+      2.19287109375,
+      2.56005859375
+    ],
+    "uptime": 519163
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:16:31 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:16:31 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59278,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 74694656,
+      "heapTotal": 31686656,
+      "heapUsed": 17349656,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      1.97998046875,
+      2.1748046875,
+      2.54296875
+    ],
+    "uptime": 519190
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:16:31 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:16:31 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59277,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73302016,
+      "heapTotal": 31686656,
+      "heapUsed": 17363248,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      1.97998046875,
+      2.1748046875,
+      2.54296875
+    ],
+    "uptime": 519190
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:16:31 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:16:31 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59279,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 74334208,
+      "heapTotal": 32210944,
+      "heapUsed": 17451696,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      1.97998046875,
+      2.1748046875,
+      2.54296875
+    ],
+    "uptime": 519190
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:16:31 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:16:31 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59276,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73842688,
+      "heapTotal": 32210944,
+      "heapUsed": 17500360,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      1.97998046875,
+      2.1748046875,
+      2.54296875
+    ],
+    "uptime": 519190
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:18:05 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:18:05 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59384,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73695232,
+      "heapTotal": 31948800,
+      "heapUsed": 17522888,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      1.88671875,
+      2.09326171875,
+      2.47021484375
+    ],
+    "uptime": 519284
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:18:05 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:18:05 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59383,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 71876608,
+      "heapTotal": 31948800,
+      "heapUsed": 17567184,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      1.88671875,
+      2.09326171875,
+      2.47021484375
+    ],
+    "uptime": 519284
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:18:05 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:18:05 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59386,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 72728576,
+      "heapTotal": 31686656,
+      "heapUsed": 17513768,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      1.88671875,
+      2.09326171875,
+      2.47021484375
+    ],
+    "uptime": 519284
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:18:05 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:18:05 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59385,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73302016,
+      "heapTotal": 31948800,
+      "heapUsed": 17351208,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      1.88671875,
+      2.09326171875,
+      2.47021484375
+    ],
+    "uptime": 519284
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:18:24 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:18:24 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59443,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73302016,
+      "heapTotal": 31948800,
+      "heapUsed": 17554928,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.6318359375,
+      2.27392578125,
+      2.52734375
+    ],
+    "uptime": 519303
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:18:24 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:18:24 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59444,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73449472,
+      "heapTotal": 31948800,
+      "heapUsed": 17350968,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.6318359375,
+      2.27392578125,
+      2.52734375
+    ],
+    "uptime": 519303
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:18:24 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:18:24 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59442,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 74874880,
+      "heapTotal": 31948800,
+      "heapUsed": 17565080,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.6318359375,
+      2.27392578125,
+      2.52734375
+    ],
+    "uptime": 519303
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:18:24 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:18:24 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59445,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73269248,
+      "heapTotal": 31948800,
+      "heapUsed": 17468096,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.6318359375,
+      2.27392578125,
+      2.52734375
+    ],
+    "uptime": 519303
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:14 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:14 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59539,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 71254016,
+      "heapTotal": 31686656,
+      "heapUsed": 17509424,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.97021484375,
+      2.40673828125,
+      2.53955078125
+    ],
+    "uptime": 519413
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:14 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:14 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59536,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73613312,
+      "heapTotal": 31948800,
+      "heapUsed": 17618984,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.97021484375,
+      2.40673828125,
+      2.53955078125
+    ],
+    "uptime": 519413
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:14 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:14 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59537,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73449472,
+      "heapTotal": 31686656,
+      "heapUsed": 17521344,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.97021484375,
+      2.40673828125,
+      2.53955078125
+    ],
+    "uptime": 519413
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:14 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:14 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59538,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73678848,
+      "heapTotal": 31948800,
+      "heapUsed": 17394992,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.97021484375,
+      2.40673828125,
+      2.53955078125
+    ],
+    "uptime": 519413
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:37 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:37 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59625,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 72499200,
+      "heapTotal": 31686656,
+      "heapUsed": 17398376,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.33984375,
+      2.525390625,
+      2.57861328125
+    ],
+    "uptime": 519436
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:37 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:37 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59626,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73940992,
+      "heapTotal": 31686656,
+      "heapUsed": 17608744,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.33984375,
+      2.525390625,
+      2.57861328125
+    ],
+    "uptime": 519436
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:37 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:37 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59624,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73744384,
+      "heapTotal": 31948800,
+      "heapUsed": 17363624,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.33984375,
+      2.525390625,
+      2.57861328125
+    ],
+    "uptime": 519436
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:37 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:37 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59627,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 72957952,
+      "heapTotal": 31948800,
+      "heapUsed": 17487536,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.33984375,
+      2.525390625,
+      2.57861328125
+    ],
+    "uptime": 519436
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:56 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:56 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59693,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73367552,
+      "heapTotal": 31948800,
+      "heapUsed": 17543976,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.60302734375,
+      2.6494140625,
+      2.6220703125
+    ],
+    "uptime": 519455
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7507124055867713.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:56 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:56 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59695,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73940992,
+      "heapTotal": 31686656,
+      "heapUsed": 17373536,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.60302734375,
+      2.6494140625,
+      2.6220703125
+    ],
+    "uptime": 519455
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7663007205870189.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:56 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:56 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59694,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 74285056,
+      "heapTotal": 31686656,
+      "heapUsed": 17381400,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.60302734375,
+      2.6494140625,
+      2.6220703125
+    ],
+    "uptime": 519455
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-6153577325081077.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 21:20:56 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 21:20:56 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 59696,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73842688,
+      "heapTotal": 31686656,
+      "heapUsed": 17443984,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.60302734375,
+      2.6494140625,
+      2.6220703125
+    ],
+    "uptime": 519455
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8976833362671179.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)

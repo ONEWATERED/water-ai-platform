@@ -12,10 +12,8 @@ import {
   CloudArrowUpIcon,
   ArrowRightIcon,
   AcademicCapIcon,
-  UserGroupIcon,
   VideoCameraIcon
 } from '@heroicons/react/24/outline';
-import ExpertGrid from '@/components/ExpertGrid';
 import ContributeSection from '@/components/ContributeSection';
 import PopupForm from '@/components/forms/PopupForm';
 import ChatInterface from '@/components/ChatInterface';
@@ -190,7 +188,7 @@ export default function HomePage() {
       {/* Statistics Section */}
       <section className="py-24 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <Statistic 
               icon={AcademicCapIcon}
               number="10,000+"
@@ -206,34 +204,7 @@ export default function HomePage() {
               number="1,000+"
               label="Research Papers"
             />
-            <Statistic 
-              icon={UserGroupIcon}
-              number="50+"
-              label="Expert Instructors"
-            />
           </div>
-        </div>
-      </section>
-
-      {/* Experts Section */}
-      <section className="py-24 bg-gray-800/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Learn from Industry Experts
-            </h2>
-            <p className="text-xl text-gray-300 mb-8">
-              Connect with leading professionals in water management and technology
-            </p>
-            <Link
-              href="/team"
-              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200"
-            >
-              View All Team Members
-              <ArrowRightIcon className="ml-2 h-5 w-5" />
-            </Link>
-          </div>
-          <ExpertGrid />
         </div>
       </section>
 

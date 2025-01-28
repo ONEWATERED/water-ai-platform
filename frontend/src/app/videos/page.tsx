@@ -1,179 +1,193 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import ReactPlayer from 'react-player';
-import {
-  PlayIcon,
-  ClockIcon,
-  UserIcon,
-  ExclamationTriangleIcon,
-  ChevronRightIcon,
-  ChevronLeftIcon,
-} from '@heroicons/react/24/outline';
-import { videos } from '@/lib/videos';
-import { formatNumber } from '@/lib/utils';
+import FeaturedMedia from '@/components/media/FeaturedMedia';
+import MediaRow from '@/components/media/MediaRow';
+import SocialChannels from '@/components/media/SocialChannels';
+import MediaPlayer from '@/components/media/MediaPlayer';
+import UploadMedia from '@/components/media/UploadMedia';
+import { PlusIcon } from '@heroicons/react/24/outline';
+
+// Sample data - replace with actual data from your backend
+const featuredContent = {
+  title: "The Future of Water Management",
+  description: "Explore how AI and machine learning are revolutionizing water treatment and distribution systems worldwide.",
+  thumbnail: "https://images.unsplash.com/photo-1581092162384-8987c1d64926?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+  duration: "45:20",
+  url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+};
+
+const videos = [
+  {
+    id: "1",
+    title: "Smart City Water Solutions",
+    thumbnail: "https://images.unsplash.com/photo-1617839625591-e5a789593135?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
+    duration: "25:30",
+    type: "video",
+    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    description: "Learn about innovative solutions for smart city water management.",
+    author: {
+      name: "Dr. Sarah Chen",
+      avatar: "https://randomuser.me/api/portraits/women/1.jpg"
+    }
+  },
+  {
+    id: "2",
+    title: "Water Treatment Technologies",
+    thumbnail: "https://images.unsplash.com/photo-1615147342761-9238e15d8b96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    duration: "18:45",
+    type: "video",
+    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    description: "Discover the latest advancements in water treatment technologies.",
+    author: {
+      name: "Prof. Michael Brown",
+      avatar: "https://randomuser.me/api/portraits/men/1.jpg"
+    }
+  },
+  // Add more videos...
+];
+
+const podcasts = [
+  {
+    id: "1",
+    title: "Water Innovation Today",
+    thumbnail: "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    duration: "55:00",
+    type: "podcast",
+    url: "https://open.spotify.com/episode/example",
+    platform: "Spotify",
+    description: "Weekly discussions about water innovation and technology.",
+    author: {
+      name: "Tech Water Cast",
+      avatar: "https://randomuser.me/api/portraits/men/2.jpg"
+    }
+  },
+  // Add more podcasts...
+];
+
+const interviews = [
+  {
+    id: "1",
+    title: "Interview with Water Tech Leaders",
+    thumbnail: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+    duration: "35:45",
+    type: "interview",
+    url: "https://www.youtube.com/watch?v=example",
+    description: "Exclusive interviews with industry leaders in water technology.",
+    author: {
+      name: "Water Tech Network",
+      avatar: "https://randomuser.me/api/portraits/women/2.jpg"
+    }
+  },
+  // Add more interviews...
+];
+
+const audioPodcasts = [
+  {
+    id: "1",
+    title: "Water Weekly",
+    thumbnail: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    duration: "45:00",
+    type: "podcast",
+    url: "https://podcasts.apple.com/example",
+    platform: "Apple Podcasts",
+    description: "Your weekly dose of water industry news and insights.",
+    author: {
+      name: "Water Industry Today",
+      avatar: "https://randomuser.me/api/portraits/men/3.jpg"
+    }
+  },
+  // Add more audio podcasts...
+];
 
 export default function VideosPage() {
-  const [selectedVideo, setSelectedVideo] = useState(videos[0]);
-  const [selectedCategory, setSelectedCategory] = useState('all');
-  const [videoError, setVideoError] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [selectedMedia, setSelectedMedia] = useState<any>(null);
+  const [showUpload, setShowUpload] = useState(false);
 
-  const categories = ['all', ...Array.from(new Set(videos.map(video => video.category)))];
-  
-  const filteredVideos = selectedCategory === 'all'
-    ? videos
-    : videos.filter(video => video.category === selectedCategory);
-
-  const handleNextVideo = () => {
-    const currentIndex = videos.findIndex(v => v.id === selectedVideo.id);
-    const nextIndex = (currentIndex + 1) % videos.length;
-    setSelectedVideo(videos[nextIndex]);
-    setVideoError(false);
-    setIsPlaying(false);
-  };
-
-  const handlePreviousVideo = () => {
-    const currentIndex = videos.findIndex(v => v.id === selectedVideo.id);
-    const previousIndex = (currentIndex - 1 + videos.length) % videos.length;
-    setSelectedVideo(videos[previousIndex]);
-    setVideoError(false);
-    setIsPlaying(false);
-  };
-
-  const handleVideoError = () => {
-    setVideoError(true);
+  const handleUpload = async (file: File, metadata: any) => {
+    // Implement your upload logic here
+    console.log('Uploading file:', file, metadata);
+    // After successful upload, you might want to refresh the media lists
   };
 
   return (
     <div className="min-h-screen bg-gray-900">
-      {/* Featured Video Player */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="relative aspect-video rounded-xl overflow-hidden bg-gray-800 mb-8">
-          {videoError ? (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-gray-400 mb-2">Error loading video</p>
-                <button
-                  onClick={() => setVideoError(false)}
-                  className="text-indigo-500 hover:text-indigo-400"
-                >
-                  Try Again
-                </button>
-              </div>
-            </div>
-          ) : (
-            <ReactPlayer
-              url={selectedVideo.videoUrl}
-              width="100%"
-              height="100%"
-              playing={isPlaying}
-              controls
-              onError={handleVideoError}
-              onPlay={() => setIsPlaying(true)}
-              onPause={() => setIsPlaying(false)}
-            />
-          )}
+      {/* Featured Content */}
+      <FeaturedMedia {...featuredContent} />
 
-          {/* Navigation Buttons */}
-          <button
-            onClick={handlePreviousVideo}
-            className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70"
-          >
-            <ChevronLeftIcon className="h-6 w-6" />
-          </button>
-          <button
-            onClick={handleNextVideo}
-            className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70"
-          >
-            <ChevronRightIcon className="h-6 w-6" />
-          </button>
-        </div>
-
-        {/* Video Info */}
-        <div className="mb-12">
-          <h1 className="text-2xl font-bold text-white mb-4">{selectedVideo.title}</h1>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <Image
-                src={selectedVideo.author.avatar}
-                alt={selectedVideo.author.name}
-                width={40}
-                height={40}
-                className="rounded-full"
-              />
-              <div>
-                <p className="text-white font-medium">{selectedVideo.author.name}</p>
-                <p className="text-sm text-gray-400">Published on {selectedVideo.publishedAt}</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-6 text-gray-400">
-              <div className="flex items-center space-x-1">
-                <UserIcon className="h-5 w-5" />
-                <span>{formatNumber(selectedVideo.views)} views</span>
-              </div>
-              <div className="flex items-center space-x-1">
-                <ClockIcon className="h-5 w-5" />
-                <span>{selectedVideo.duration}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Category Filter */}
-        <div className="mb-8">
-          <div className="flex flex-wrap gap-2">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-full text-sm font-medium ${
-                  selectedCategory === category
-                    ? 'bg-indigo-600 text-white'
-                    : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-                }`}
-              >
-                {category.charAt(0).toUpperCase() + category.slice(1)}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Video Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredVideos.map((video) => (
-            <Link
-              key={video.id}
-              href={`/videos/${video.slug}`}
-              className="group"
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="relative aspect-video rounded-lg overflow-hidden bg-gray-800"
-              >
-                <Image
-                  src={video.thumbnailUrl}
-                  alt={video.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-white font-medium line-clamp-2 mb-1">{video.title}</h3>
-                  <div className="flex items-center justify-between text-sm text-gray-300">
-                    <span>{video.duration}</span>
-                    <span>{formatNumber(video.views)} views</span>
-                  </div>
-                </div>
-              </motion.div>
-            </Link>
-          ))}
-        </div>
+      {/* Upload Button */}
+      <div className="relative z-10">
+        <button
+          onClick={() => setShowUpload(true)}
+          className="fixed bottom-8 right-8 p-4 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors"
+        >
+          <PlusIcon className="w-6 h-6" />
+        </button>
       </div>
+
+      {/* Main Content */}
+      <div className="relative -mt-32">
+        {/* Latest Videos */}
+        <MediaRow
+          title="Latest Videos"
+          items={videos}
+          onItemClick={setSelectedMedia}
+        />
+
+        {/* Popular Podcasts */}
+        <MediaRow
+          title="Popular Podcasts"
+          items={podcasts}
+          showPlatform
+          onItemClick={setSelectedMedia}
+        />
+
+        {/* Expert Interviews */}
+        <MediaRow
+          title="Expert Interviews"
+          items={interviews}
+          onItemClick={setSelectedMedia}
+        />
+
+        {/* Social Media Channels */}
+        <SocialChannels />
+
+        {/* Audio Podcasts */}
+        <MediaRow
+          title="Audio Podcasts"
+          items={audioPodcasts}
+          showPlatform
+          onItemClick={setSelectedMedia}
+        />
+      </div>
+
+      {/* Media Player Modal */}
+      {selectedMedia && (
+        <MediaPlayer
+          {...selectedMedia}
+          comments={[
+            {
+              id: '1',
+              user: {
+                name: 'John Doe',
+                avatar: 'https://randomuser.me/api/portraits/men/4.jpg'
+              },
+              content: 'Great insights on water management!',
+              timestamp: '2 hours ago'
+            },
+            // Add more comments...
+          ]}
+          onClose={() => setSelectedMedia(null)}
+        />
+      )}
+
+      {/* Upload Modal */}
+      {showUpload && (
+        <UploadMedia
+          onClose={() => setShowUpload(false)}
+          onUpload={handleUpload}
+        />
+      )}
     </div>
   );
 }

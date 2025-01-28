@@ -6,17 +6,59 @@ import { usePathname } from 'next/navigation';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useAuth } from '@/lib/auth-context';
-import { motion } from 'framer-motion';
+import OnewaterTvLogo from './news/OnewaterTvLogo';
 
 const navigation = [
   { name: 'Home', href: '/' },
+  { name: 'Digital Avatars', href: '/digital-avatars' },
+  { 
+    name: 'Labs', 
+    href: '/labs',
+    description: 'Innovate with OneWater Labs - Your water industry ideas incubator.',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+      </svg>
+    ),
+    featured: true,
+    badge: 'NEW'
+  },
+  { 
+    name: 'TOKS', 
+    href: '/toks',
+    badge: 'NEW',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+      </svg>
+    )
+  },
   { name: 'Blog', href: '/blog' },
-  { name: 'Courses', href: '/courses' },
+  { 
+    name: 'Trivia', 
+    href: '/trivia',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+      </svg>
+    )
+  },
   { name: 'Videos', href: '/videos' },
-  { name: 'Research', href: '/research' },
-  { name: 'Team', href: '/team' },
-  { name: 'Vendors', href: '/vendors' },
+  {
+    name: 'OneWater.TV',
+    href: '/onewater-tv',
+    description: 'Your 24/7 source for water industry news and insights.',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+      </svg>
+    ),
+    logo: OnewaterTvLogo,
+    featured: true,
+    badge: 'LIVE'
+  },
   { name: 'Community', href: '/community' },
+  { name: 'About', href: '/team' }
 ];
 
 export default function Navbar() {
@@ -25,103 +67,92 @@ export default function Navbar() {
   const { user } = useAuth();
 
   return (
-    <>
-      <header className="sticky top-0 z-50">
-        {/* Top gradient line */}
-        <div className="h-1 w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
+    <header className="bg-gray-900 sticky top-0 z-50">
+      {/* Top gradient line */}
+      <div className="h-1 w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
+      
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div className="flex lg:flex-1">
+          <Link href="/" className="-m-1.5 p-1.5">
+            <span className="text-white text-xl font-bold">Water AI</span>
+          </Link>
+        </div>
         
-        {/* Main navbar */}
-        <div className="bg-gray-900 border-b border-gray-800">
-          <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8" aria-label="Global">
-            <div className="flex lg:flex-1">
-              <Link href="/" className="-m-1.5 p-1.5">
-                <motion.span 
-                  className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  OneWater.AI
-                </motion.span>
-              </Link>
-            </div>
-            
-            <div className="flex lg:hidden">
-              <button
-                type="button"
-                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400 hover:text-gray-300"
-                onClick={() => setMobileMenuOpen(true)}
-              >
-                <span className="sr-only">Open main menu</span>
-                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-              </button>
-            </div>
-            
-            <div className="hidden lg:flex lg:gap-x-8">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`relative text-sm font-medium transition-colors hover:text-white ${
-                    pathname === item.href
-                      ? 'text-white'
-                      : 'text-gray-300'
-                  }`}
-                >
-                  {pathname === item.href && (
-                    <motion.span
-                      className="absolute -bottom-[21px] left-0 right-0 h-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
-                      layoutId="navbar-active"
-                      transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                    />
-                  )}
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-            
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              {user?.role === 'admin' ? (
-                <div className="flex items-center gap-4">
-                  <Link
-                    href="/admin"
-                    className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-                  >
-                    Admin Dashboard
-                  </Link>
-                  <button
-                    onClick={() => useAuth().logout()}
-                    className="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-white bg-gray-800 hover:bg-gray-700 transition-colors"
-                  >
-                    Logout
-                  </button>
-                </div>
+        <div className="flex lg:hidden">
+          <button
+            type="button"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+          </button>
+        </div>
+        
+        <div className="hidden lg:flex lg:gap-x-8">
+          {navigation.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className={`relative text-sm font-medium transition-colors hover:text-white ${
+                pathname === item.href
+                  ? 'text-white'
+                  : 'text-gray-300'
+              } flex items-center space-x-2`}
+            >
+              {item.logo ? (
+                <item.logo />
               ) : (
+                <span>{item.name}</span>
+              )}
+              {item.badge && (
+                <span className="ml-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
+                  {item.badge}
+                </span>
+              )}
+            </Link>
+          ))}
+        </div>
+        
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          {user ? (
+            <div className="flex items-center space-x-4">
+              {user.role === 'admin' && (
                 <Link
-                  href="/login"
-                  className="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 transition-colors"
+                  href="/admin"
+                  className="text-sm font-medium text-gray-300 hover:text-white"
                 >
-                  Admin Login <span aria-hidden="true" className="ml-2">→</span>
+                  Admin Dashboard
                 </Link>
               )}
+              <button
+                onClick={() => useAuth().logout()}
+                className="text-sm font-medium text-gray-300 hover:text-white"
+              >
+                Logout
+              </button>
             </div>
-          </nav>
+          ) : (
+            <Link
+              href="/login"
+              className="text-sm font-medium text-gray-300 hover:text-white"
+            >
+              Log in <span aria-hidden="true">&rarr;</span>
+            </Link>
+          )}
         </div>
-      </header>
+      </nav>
 
-      {/* Mobile menu */}
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-800">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                OneWater.AI
-              </span>
+              <span className="text-white text-xl font-bold">Water AI</span>
             </Link>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-400 hover:text-gray-300"
+              className="-m-2.5 rounded-md p-2.5 text-gray-400"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -139,23 +170,34 @@ export default function Navbar() {
                       pathname === item.href
                         ? 'bg-gray-800 text-white'
                         : 'text-gray-300 hover:bg-gray-800 hover:text-white'
-                    }`}
+                    } flex items-center space-x-2`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    {item.name}
+                    {item.logo ? (
+                      <item.logo />
+                    ) : (
+                      <span>{item.name}</span>
+                    )}
+                    {item.badge && (
+                      <span className="ml-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
+                        {item.badge}
+                      </span>
+                    )}
                   </Link>
                 ))}
               </div>
               <div className="py-6">
-                {user?.role === 'admin' ? (
+                {user ? (
                   <>
-                    <Link
-                      href="/admin"
-                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-white"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      Admin Dashboard
-                    </Link>
+                    {user.role === 'admin' && (
+                      <Link
+                        href="/admin"
+                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-white"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        Admin Dashboard
+                      </Link>
+                    )}
                     <button
                       onClick={() => {
                         useAuth().logout();
@@ -172,7 +214,7 @@ export default function Navbar() {
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-medium text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Admin Login
+                    Log in
                   </Link>
                 )}
               </div>
@@ -180,6 +222,6 @@ export default function Navbar() {
           </div>
         </Dialog.Panel>
       </Dialog>
-    </>
+    </header>
   );
 }

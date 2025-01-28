@@ -2,33 +2,59 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { 
-  ChipIcon, 
-  CodeIcon, 
-  DatabaseIcon, 
-  CloudIcon 
-} from '@heroicons/react/solid';
+  BeakerIcon, 
+  CommandLineIcon, 
+  ServerIcon, 
+  CloudIcon,
+  UserPlusIcon,
+  CloudArrowUpIcon,
+  ArrowRightIcon,
+  AcademicCapIcon,
+  UserGroupIcon,
+  VideoCameraIcon
+} from '@heroicons/react/24/outline';
+import ExpertGrid from '@/components/ExpertGrid';
+import ContributeSection from '@/components/ContributeSection';
+import PopupForm from '@/components/forms/PopupForm';
+import ChatInterface from '@/components/ChatInterface';
+
+interface StatisticProps {
+  icon: React.ForwardRefExoticComponent<React.SVGProps<SVGSVGElement>>;
+  number: string;
+  label: string;
+}
+
+function Statistic({ icon: Icon, number, label }: StatisticProps) {
+  return (
+    <div className="flex flex-col items-center text-center">
+      <Icon className="h-8 w-8 text-indigo-400 mb-2" />
+      <div className="text-3xl font-bold text-white mb-1">{number}</div>
+      <div className="text-gray-300">{label}</div>
+    </div>
+  );
+}
 
 export default function HomePage() {
-  const [activeFeature, setActiveFeature] = useState(0);
+  const [showAffiliateForm, setShowAffiliateForm] = useState(false);
+  const [showContributeForm, setShowContributeForm] = useState(false);
 
   const features = [
     {
-      icon: <ChipIcon className="w-8 h-8 text-indigo-500" />,
+      icon: <CommandLineIcon className="w-8 h-8 text-indigo-500" />,
       title: 'Advanced Learning',
       description: 'AI-powered adaptive learning paths tailored to your water technology expertise.',
       gradient: 'from-indigo-500 to-purple-600'
     },
     {
-      icon: <CodeIcon className="w-8 h-8 text-green-500" />,
+      icon: <ServerIcon className="w-8 h-8 text-green-500" />,
       title: 'Interactive Modules',
       description: 'Hands-on, code-driven learning experiences with real-world water tech scenarios.',
       gradient: 'from-green-500 to-teal-600'
     },
     {
-      icon: <DatabaseIcon className="w-8 h-8 text-blue-500" />,
+      icon: <CloudIcon className="w-8 h-8 text-blue-500" />,
       title: 'Global Insights',
       description: 'Access cutting-edge research and collaborative knowledge repositories.',
       gradient: 'from-blue-500 to-cyan-600'
@@ -42,171 +68,181 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen flex flex-col">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-white">
-            Water.AI
-          </Link>
-          <div className="space-x-6">
-            <Link href="/courses" className="text-gray-300 hover:text-white transition">Courses</Link>
-            <Link href="/research" className="text-gray-300 hover:text-white transition">Research</Link>
-            <Link href="/community" className="text-gray-300 hover:text-white transition">Community</Link>
-            <Link 
-              href="/auth/login" 
-              className="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-md text-white transition"
-            >
-              Login
-            </Link>
+    <div className="relative min-h-screen bg-gray-900">
+      {/* Hero Section */}
+      <div className="relative isolate overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <div
+            className="absolute inset-0 bg-gradient-to-b from-blue-950 to-gray-900"
+            style={{
+              backgroundImage: `radial-gradient(circle at 50% 50%, rgba(29, 78, 216, 0.15) 0%, transparent 100%)`,
+            }}
+          />
+        </div>
+
+        <div className="mx-auto max-w-7xl px-6 pb-24 pt-16 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+          <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
+            <div className="mt-24 sm:mt-32 lg:mt-16">
+              <a href="#" className="inline-flex space-x-6">
+                <span className="rounded-full bg-blue-500/10 px-3 py-1 text-sm font-semibold leading-6 text-blue-400 ring-1 ring-inset ring-blue-500/20">
+                  Latest updates
+                </span>
+                <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-300">
+                  <span>Just released v1.0</span>
+                  <ArrowRightIcon className="h-5 w-5 text-gray-500" aria-hidden="true" />
+                </span>
+              </a>
+            </div>
+            <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
+              ONE WATER
+            </h1>
+            <p className="mt-4 text-2xl font-semibold text-blue-400 sm:text-3xl">
+              Where Water Needs AI... Finally!
+            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-300">
+              Join our community of water professionals, learn from industry experts, and contribute to the future of water management.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link
+                href="/courses"
+                className="rounded-md bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              >
+                Start Learning
+              </Link>
+              <Link
+                href="/community"
+                className="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-white/20"
+              >
+                Join Community
+              </Link>
+              <button
+                onClick={() => setShowAffiliateForm(true)}
+                className="rounded-md bg-green-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+              >
+                Become a Knowledge Affiliate
+              </button>
+              <button
+                onClick={() => setShowContributeForm(true)}
+                className="rounded-md bg-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
+              >
+                Contribute to OneWater GPT
+              </button>
+            </div>
+          </div>
+          <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+            <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
+              <ChatInterface />
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
 
-      {/* Hero Section */}
-      <header className="relative pt-32 pb-16 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div 
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <h1 className="text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-              Revolutionizing Water Technology Learning
-            </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-              Empowering water technology professionals with AI-driven education, 
-              collaborative research, and cutting-edge insights.
-            </p>
-            <div className="flex justify-center space-x-4">
-              <Link 
-                href="/auth/register" 
-                className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-md text-lg font-semibold transition"
-              >
-                Get Started
-              </Link>
-              <Link 
-                href="/courses" 
-                className="border border-gray-700 text-gray-300 hover:bg-gray-800 px-8 py-3 rounded-md text-lg font-semibold transition"
-              >
-                Explore Courses
-              </Link>
-            </div>
-          </motion.div>
-        </div>
+      {/* Popup Forms */}
+      <PopupForm
+        isOpen={showAffiliateForm}
+        onClose={() => setShowAffiliateForm(false)}
+        title="Become a Knowledge Affiliate"
+        description="Share your expertise with our community and help shape the future of water management. As a Knowledge Affiliate, you'll have the opportunity to create courses, share insights, and earn rewards."
+        buttonText="Submit Application"
+        formType="knowledge-affiliate"
+      />
 
-        {/* Animated Background */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] bg-gradient-to-r from-indigo-900/20 via-purple-900/20 to-pink-900/20 animate-slow-spin opacity-30"></div>
-        </div>
-      </header>
+      <PopupForm
+        isOpen={showContributeForm}
+        onClose={() => setShowContributeForm(false)}
+        title="Contribute to OneWater GPT"
+        description="Help us improve our AI capabilities by contributing your expertise. Whether you're a developer, data scientist, or water expert, your contributions will help make OneWater GPT more powerful and accurate."
+        buttonText="Submit Contribution"
+        formType="contribute"
+      />
 
       {/* Features Section */}
-      <section className="py-16 bg-gray-800">
+      <section className="py-24 bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Powerful Features for Water Management
+            </h2>
+            <p className="text-xl text-gray-300">
+              Everything you need to master water technology and management
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <motion.div 
+              <motion.div
                 key={feature.title}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                className={`
-                  p-6 rounded-2xl border border-gray-700 bg-gray-900 
-                  transform transition-all duration-300 hover:scale-105 hover:border-indigo-500
-                  flex flex-col items-start
-                `}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50"
               >
-                <div className={`
-                  w-12 h-12 rounded-full mb-4 flex items-center justify-center
-                  bg-gradient-to-br ${feature.gradient}
-                `}>
+                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-4`}>
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-white">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-400">
-                  {feature.description}
-                </p>
+                <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
+                <p className="text-gray-300">{feature.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-16 bg-gray-900 border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500">
-              Transform Your Water Technology Career
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-              Join a global community of innovators, researchers, and professionals 
-              driving sustainable water technology solutions.
-            </p>
-            <div className="flex justify-center space-x-4">
-              <Link 
-                href="/auth/register" 
-                className="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-4 rounded-md text-lg font-semibold transition"
-              >
-                Start Your Journey
-              </Link>
-              <Link 
-                href="/courses" 
-                className="border border-gray-700 text-gray-300 hover:bg-gray-800 px-10 py-4 rounded-md text-lg font-semibold transition"
-              >
-                View Curriculum
-              </Link>
-            </div>
-          </motion.div>
+      {/* Statistics Section */}
+      <section className="py-24 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <Statistic 
+              icon={AcademicCapIcon}
+              number="10,000+"
+              label="Active Learners"
+            />
+            <Statistic 
+              icon={VideoCameraIcon}
+              number="500+"
+              label="Video Courses"
+            />
+            <Statistic 
+              icon={BeakerIcon}
+              number="1,000+"
+              label="Research Papers"
+            />
+            <Statistic 
+              icon={UserGroupIcon}
+              number="50+"
+              label="Expert Instructors"
+            />
+          </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-800 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4 text-white">Water.AI</h3>
-            <p className="text-gray-400">
-              Advancing water technology through AI-powered education and global collaboration.
+      {/* Experts Section */}
+      <section className="py-24 bg-gray-800/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Learn from Industry Experts
+            </h2>
+            <p className="text-xl text-gray-300 mb-8">
+              Connect with leading professionals in water management and technology
             </p>
+            <Link
+              href="/team"
+              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200"
+            >
+              View All Team Members
+              <ArrowRightIcon className="ml-2 h-5 w-5" />
+            </Link>
           </div>
-          <div>
-            <h4 className="font-semibold mb-4 text-white">Explore</h4>
-            <ul className="space-y-2">
-              <li><Link href="/courses" className="text-gray-400 hover:text-white">Courses</Link></li>
-              <li><Link href="/research" className="text-gray-400 hover:text-white">Research</Link></li>
-              <li><Link href="/community" className="text-gray-400 hover:text-white">Community</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4 text-white">Resources</h4>
-            <ul className="space-y-2">
-              <li><Link href="/blog" className="text-gray-400 hover:text-white">Blog</Link></li>
-              <li><Link href="/webinars" className="text-gray-400 hover:text-white">Webinars</Link></li>
-              <li><Link href="/papers" className="text-gray-400 hover:text-white">Research Papers</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4 text-white">Connect</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white">LinkedIn</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Twitter</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Email</a></li>
-            </ul>
-          </div>
+          <ExpertGrid />
         </div>
-        <div className="text-center mt-8 border-t border-gray-700 pt-6">
-          <p className="text-gray-500">&copy; 2025 Water.AI. All rights reserved.</p>
+      </section>
+
+      {/* Contribute Section */}
+      <section className="py-24 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ContributeSection />
         </div>
-      </footer>
+      </section>
     </div>
   );
 }

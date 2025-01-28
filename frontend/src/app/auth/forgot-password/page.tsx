@@ -5,9 +5,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import axios from 'axios';
 
+type FormStatus = 'idle' | 'loading' | 'error' | 'success';
+
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<FormStatus>('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -26,6 +28,8 @@ export default function ForgotPasswordPage() {
       );
     }
   };
+
+  const isLoading = status === 'loading';
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center px-4">
@@ -80,16 +84,16 @@ export default function ForgotPasswordPage() {
 
             <button 
               type="submit" 
-              disabled={status === 'loading'}
+              disabled={isLoading}
               className={`
                 w-full py-3 rounded-lg transition duration-300
-                ${status === 'loading' 
+                ${isLoading 
                   ? 'bg-blue-400 cursor-not-allowed' 
                   : 'bg-blue-600 hover:bg-blue-700 text-white'
                 }
               `}
             >
-              {status === 'loading' ? 'Sending...' : 'Send Reset Link'}
+              {isLoading ? 'Sending...' : 'Send Reset Link'}
             </button>
           </form>
         ) : (
@@ -97,31 +101,29 @@ export default function ForgotPasswordPage() {
             {status === 'success' && (
               <div className="space-y-4">
                 <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
-                  A password reset link has been sent to {email}. 
-                  Please check your inbox.
+                  Check your email for password reset instructions.
                 </div>
                 <Link 
-                  href="/auth/login" 
-                  className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+                  href="/auth/signin"
+                  className="text-blue-600 hover:text-blue-700 inline-block"
                 >
-                  Back to Login
+                  Return to Sign In
                 </Link>
               </div>
             )}
           </div>
         )}
 
-        <div className="text-center">
-          <p className="text-blue-600">
-            Remember your password? {' '}
+        {(status === 'idle' || status === 'error') && (
+          <div className="text-center mt-4">
             <Link 
-              href="/auth/login" 
-              className="text-blue-800 font-semibold hover:underline"
+              href="/auth/signin"
+              className="text-blue-600 hover:text-blue-700"
             >
-              Login here
+              Back to Sign In
             </Link>
-          </p>
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );

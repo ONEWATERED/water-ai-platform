@@ -40,6 +40,16 @@ Ok to proceed? (y)yNeed to install the following packages:
 create-next-app@15.1.6
 Ok to proceed? (y)
 y
+cd /Users/apas/CascadeProjects/multimodule-webapp/backend
+npx prisma migrate dev --name add_auth_verification_fieldscd /Users/apas/CascadeProjects/multimodule-webapp/backend
+npx prisma migrate dev --name add_auth_verification_fieldscd /Users/apas/CascadeProjects/multimodule-webapp/backend
+npx prisma migrate dev --name add_auth_verification_fields
+cd /Users/apas/CascadeProjects/multimodule-webapp/backend
+npx prisma migrate dev --name add_auth_verification_fieldscd /Users/apas/CascadeProjects/multimodule-webapp/backend
+npx prisma migrate dev --name add_auth_verification_fields
+cd /Users/apas/CascadeProjects/multimodule-webapp/backend
+npx prisma migrate dev --name add_auth_verification_fieldscd /Users/apas/CascadeProjects/multimodule-webapp/backend
+npx prisma migrate dev --name add_auth_verification_fields
 
 - **File Storage**: AWS S3 or similar for media files
 - **Search**: Elasticsearch for content search

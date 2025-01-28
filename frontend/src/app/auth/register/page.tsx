@@ -3,11 +3,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
-import axios from 'axios';
+import { useAuth } from '@/lib/auth-context';
 
 export default function RegisterPage() {
   const router = useRouter();
+  const { register } = useAuth();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -38,12 +38,8 @@ export default function RegisterPage() {
     }
 
     try {
-      const { confirmPassword, ...registrationData } = formData;
-      const response = await axios.post('/api/auth/register', registrationData);
-      
-      // Show success message and redirect to login
-      alert(response.data.message);
-      router.push('/auth/login');
+      await register(formData.email, formData.password, formData.name);
+      router.push('/auth/login?registered=true');
     } catch (err: any) {
       setError(
         err.response?.data?.message || 
@@ -55,24 +51,17 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center px-4">
-      <div className="bg-white shadow-2xl rounded-2xl max-w-md w-full p-8 space-y-6">
+    <div className="min-h-screen bg-gray-900 flex items-center justify-center px-4">
+      <div className="bg-gray-800 shadow-2xl rounded-2xl max-w-md w-full p-8 space-y-6">
         <div className="text-center">
-          <Image 
-            src="/water-logo.svg" 
-            alt="WaterTech Logo" 
-            width={80} 
-            height={80} 
-            className="mx-auto mb-4"
-          />
-          <h2 className="text-3xl font-bold text-blue-900">Create Your Account</h2>
-          <p className="text-blue-600 mt-2">Join WaterTech Insights Community</p>
+          <h2 className="text-3xl font-bold text-white">Create Account</h2>
+          <p className="text-gray-400 mt-2">Join Water.AI Platform</p>
         </div>
 
         <form onSubmit={handleRegister} className="space-y-4">
           {error && (
             <div 
-              className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" 
+              className="bg-red-900/50 border border-red-500 text-red-200 px-4 py-3 rounded-lg" 
               role="alert"
             >
               {error}
@@ -80,7 +69,7 @@ export default function RegisterPage() {
           )}
 
           <div>
-            <label htmlFor="name" className="block text-blue-700 mb-2">
+            <label htmlFor="name" className="block text-gray-300 mb-2">
               Full Name
             </label>
             <input 
@@ -89,14 +78,14 @@ export default function RegisterPage() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Your full name"
+              className="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+              placeholder="John Doe"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-blue-700 mb-2">
+            <label htmlFor="email" className="block text-gray-300 mb-2">
               Email Address
             </label>
             <input 
@@ -105,14 +94,14 @@ export default function RegisterPage() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
               placeholder="you@example.com"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-blue-700 mb-2">
+            <label htmlFor="password" className="block text-gray-300 mb-2">
               Password
             </label>
             <input 
@@ -121,15 +110,14 @@ export default function RegisterPage() {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Create a strong password"
+              className="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+              placeholder="••••••••"
               required
-              minLength={8}
             />
           </div>
 
           <div>
-            <label htmlFor="confirmPassword" className="block text-blue-700 mb-2">
+            <label htmlFor="confirmPassword" className="block text-gray-300 mb-2">
               Confirm Password
             </label>
             <input 
@@ -138,38 +126,27 @@ export default function RegisterPage() {
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Repeat your password"
+              className="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+              placeholder="••••••••"
               required
-              minLength={8}
             />
           </div>
 
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             disabled={isLoading}
-            className={`
-              w-full py-3 rounded-lg transition duration-300
-              ${isLoading 
-                ? 'bg-blue-400 cursor-not-allowed' 
-                : 'bg-blue-600 hover:bg-blue-700 text-white'
-              }
-            `}
+            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {isLoading ? 'Creating Account...' : 'Create Account'}
+            {isLoading ? 'Creating account...' : 'Create Account'}
           </button>
         </form>
 
-        <div className="text-center">
-          <p className="text-blue-600">
-            Already have an account? {' '}
-            <Link 
-              href="/auth/login" 
-              className="text-blue-800 font-semibold hover:underline"
-            >
-              Login here
-            </Link>
-          </p>
+        <div className="text-center text-sm">
+          <span className="text-gray-400">Already have an account?</span>
+          {' '}
+          <Link href="/auth/login" className="text-indigo-400 hover:text-indigo-300 font-medium">
+            Sign in
+          </Link>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import mongoose from 'mongoose';
 import { PrismaClient } from '@prisma/client';
 
 // Import logging configuration
@@ -9,6 +10,7 @@ import { configureLogging } from './config/logging';
 
 // Import routes
 import authRoutes from './routes/auth.routes';
+import adminRoutes from './routes/admin.routes';
 import courseRoutes from './routes/course.routes';
 import courseFilterRoutes from './routes/course.filter.routes';
 import paymentRoutes from './routes/payment.routes';
@@ -28,6 +30,7 @@ configureLogging(app);
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/admin', adminRoutes);
 app.use('/api/courses', courseRoutes);
 app.use('/api/filter', courseFilterRoutes);
 app.use('/api/payments', paymentRoutes);
@@ -43,8 +46,13 @@ app.get('/health', (req, res) => {
 
 async function main() {
   try {
+    // Connect to MongoDB
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/watertech');
+    logger.info('MongoDB connection established');
+
+    // Connect to Prisma
     await prisma.$connect();
-    logger.info('Database connection established', {
+    logger.info('Prisma Database connection established', {
       host: process.env.DATABASE_URL?.split('@')[1],
       environment: process.env.NODE_ENV
     });
@@ -75,5 +83,6 @@ main()
   })
   .finally(async () => {
     await prisma.$disconnect();
-    logger.info('Prisma client disconnected');
+    await mongoose.disconnect();
+    logger.info('Database connections closed');
   });

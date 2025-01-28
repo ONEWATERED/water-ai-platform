@@ -1,0 +1,9 @@
+.git
+.env
+.env.example
+deploy.tar.gz
+ecosystem.config.js
+deploy.sh
+.htaccess
+README.md
+*.log

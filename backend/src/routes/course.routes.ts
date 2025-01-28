@@ -1,6 +1,6 @@
 import express from 'express';
 import { courseController } from '../controllers/course.controller';
-import { authenticateUser, authorizeRoles } from '../middleware/auth.middleware';
+import { authenticate, authorizeRoles } from '../middleware/auth.middleware';
 
 const router = express.Router();
 
@@ -11,18 +11,18 @@ router.get('/:courseId/reviews', courseController.getCourseReviews);
 
 // Protected Routes
 router.post('/', 
-  authenticateUser, 
-  authorizeRoles(['ADMIN', 'INSTRUCTOR']), 
+  authenticate, 
+  authorizeRoles('ADMIN', 'INSTRUCTOR'), 
   courseController.createCourse
 );
 
 router.post('/enroll', 
-  authenticateUser, 
+  authenticate, 
   courseController.enrollInCourse
 );
 
 router.post('/:courseId/reviews', 
-  authenticateUser, 
+  authenticate, 
   courseController.addCourseReview
 );
 

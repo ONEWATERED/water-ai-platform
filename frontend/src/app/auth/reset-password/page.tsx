@@ -6,17 +6,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import axios from 'axios';
 
+type FormStatus = 'idle' | 'loading' | 'error' | 'success';
+
 export default function ResetPasswordPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [token, setToken] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<FormStatus>('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
-    const resetToken = searchParams.get('token');
+    const resetToken = searchParams?.get('token');
     if (resetToken) {
       setToken(resetToken);
     } else {
@@ -27,28 +29,22 @@ export default function ResetPasswordPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('loading');
-    setErrorMessage('');
-
-    // Validate password match
+    
     if (password !== confirmPassword) {
       setStatus('error');
       setErrorMessage('Passwords do not match');
       return;
     }
 
+    setStatus('loading');
+    setErrorMessage('');
+
     try {
-      const response = await axios.post('/api/auth/reset-password', { 
-        token, 
-        newPassword: password 
+      await axios.post('/api/auth/reset-password', {
+        token,
+        password
       });
-      
       setStatus('success');
-      
-      // Redirect to login after successful reset
-      setTimeout(() => {
-        router.push('/auth/login');
-      }, 2000);
     } catch (error: any) {
       setStatus('error');
       setErrorMessage(
@@ -57,6 +53,8 @@ export default function ResetPasswordPage() {
       );
     }
   };
+
+  const isLoading = status === 'loading';
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center px-4">
@@ -70,20 +68,29 @@ export default function ResetPasswordPage() {
             className="mx-auto mb-4"
           />
           <h2 className="text-3xl font-bold text-blue-900">
-            {status === 'idle' && 'Reset Password'}
-            {status === 'loading' && 'Resetting Password'}
-            {status === 'success' && 'Password Reset'}
-            {status === 'error' && 'Reset Failed'}
+            {status === 'success' ? 'Password Reset' : 'Reset Your Password'}
           </h2>
           <p className="text-blue-600 mt-2">
-            {status === 'idle' && 'Create a new password for your account'}
-            {status === 'loading' && 'Updating your password...'}
-            {status === 'success' && 'Password successfully reset'}
-            {status === 'error' && 'Unable to reset password'}
+            {status === 'success' 
+              ? 'Your password has been successfully reset'
+              : 'Enter your new password below'
+            }
           </p>
         </div>
 
-        {status === 'idle' || status === 'error' ? (
+        {status === 'success' ? (
+          <div className="text-center">
+            <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+              Password reset successful!
+            </div>
+            <Link 
+              href="/auth/signin"
+              className="text-blue-600 hover:text-blue-700"
+            >
+              Sign in with your new password
+            </Link>
+          </div>
+        ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             {status === 'error' && (
               <div 
@@ -104,23 +111,23 @@ export default function ResetPasswordPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Enter new password"
+                placeholder="Enter your new password"
                 required
                 minLength={8}
               />
             </div>
 
             <div>
-              <label htmlFor="confirm-password" className="block text-blue-700 mb-2">
-                Confirm New Password
+              <label htmlFor="confirmPassword" className="block text-blue-700 mb-2">
+                Confirm Password
               </label>
               <input 
                 type="password" 
-                id="confirm-password"
+                id="confirmPassword"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Confirm new password"
+                placeholder="Confirm your new password"
                 required
                 minLength={8}
               />
@@ -128,48 +135,30 @@ export default function ResetPasswordPage() {
 
             <button 
               type="submit" 
-              disabled={status === 'loading'}
+              disabled={isLoading || !token}
               className={`
                 w-full py-3 rounded-lg transition duration-300
-                ${status === 'loading' 
+                ${isLoading || !token
                   ? 'bg-blue-400 cursor-not-allowed' 
                   : 'bg-blue-600 hover:bg-blue-700 text-white'
                 }
               `}
             >
-              {status === 'loading' ? 'Resetting...' : 'Reset Password'}
+              {isLoading ? 'Resetting...' : 'Reset Password'}
             </button>
           </form>
-        ) : (
-          <div className="text-center">
-            {status === 'success' && (
-              <div className="space-y-4">
-                <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
-                  Your password has been successfully reset. 
-                  Redirecting to login...
-                </div>
-                <Link 
-                  href="/auth/login" 
-                  className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
-                >
-                  Go to Login
-                </Link>
-              </div>
-            )}
-          </div>
         )}
 
-        <div className="text-center">
-          <p className="text-blue-600">
-            Remember your password? {' '}
+        {!status.match(/success|loading/) && (
+          <div className="text-center mt-4">
             <Link 
-              href="/auth/login" 
-              className="text-blue-800 font-semibold hover:underline"
+              href="/auth/signin"
+              className="text-blue-600 hover:text-blue-700"
             >
-              Login here
+              Back to Sign In
             </Link>
-          </p>
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );

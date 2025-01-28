@@ -1,17 +1,17 @@
 import express from 'express';
 import { paymentController } from '../controllers/payment.controller';
-import { authenticateUser } from '../middleware/auth.middleware';
+import { authenticate } from '../middleware/auth.middleware';
 
 const router = express.Router();
 
 // Protected Payment Routes
 router.post('/course/initialize', 
-  authenticateUser, 
+  authenticate, 
   paymentController.createCoursePayment
 );
 
 router.post('/course/confirm', 
-  authenticateUser, 
+  authenticate, 
   paymentController.confirmCoursePayment
 );
 

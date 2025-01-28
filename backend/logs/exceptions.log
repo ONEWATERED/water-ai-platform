@@ -4350,3 +4350,1091 @@ TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
     at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1288:32)
     at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 22:53:43 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 22:53:43 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 72406,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 73449472,
+      "heapTotal": 31162368,
+      "heapUsed": 21888088,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.24560546875,
+      6.0615234375,
+      6.8720703125
+    ],
+    "uptime": 525022
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 23:05:06 [error]: uncaughtException: (0 , auth_middleware_1.authorizeRoles) is not a function
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 23:05:06 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 74942,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 76414976,
+      "heapTotal": 31162368,
+      "heapUsed": 21778032,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.40283203125,
+      3.1552734375,
+      4.6357421875
+    ],
+    "uptime": 525705
+  },
+  "trace": [
+    {
+      "column": 17,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1288,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1104,
+      "method": "_load",
+      "native": false
+    }
+  ]
+}
+TypeError: (0 , auth_middleware_1.authorizeRoles) is not a function
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-01-25 23:06:18 [error]: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:13:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 23:06:18 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 75072,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 72286208,
+      "heapTotal": 31948800,
+      "heapUsed": 17593176,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.80419921875,
+      3.279296875,
+      4.5615234375
+    ],
+    "uptime": 525777
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js",
+      "function": "Route.<computed> [as post]",
+      "line": 216,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js",
+      "function": "Function.proto.<computed> [as post]",
+      "line": 521,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 8,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 13,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ]
+}
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:13:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+2025-01-25 23:06:18 [error]: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:13:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 23:06:18 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 75073,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 70582272,
+      "heapTotal": 31686656,
+      "heapUsed": 17583464,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.80419921875,
+      3.279296875,
+      4.5615234375
+    ],
+    "uptime": 525777
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js",
+      "function": "Route.<computed> [as post]",
+      "line": 216,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js",
+      "function": "Function.proto.<computed> [as post]",
+      "line": 521,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 8,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 13,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ]
+}
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:13:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+2025-01-25 23:06:27 [error]: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:13:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 23:06:27 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 75321,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 75530240,
+      "heapTotal": 31162368,
+      "heapUsed": 21909560,
+      "external": 2266982,
+      "arrayBuffers": 16835
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.9814453125,
+      3.3349609375,
+      4.56640625
+    ],
+    "uptime": 525786
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js",
+      "function": "Route.<computed> [as post]",
+      "line": 216,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js",
+      "function": "Function.proto.<computed> [as post]",
+      "line": 521,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 8,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts",
+      "function": null,
+      "line": 13,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ]
+}
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/course.routes.ts:13:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+2025-01-25 23:09:49 [error]: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/payment.routes.ts:8:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 23:09:49 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 75445,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 80658432,
+      "heapTotal": 35094528,
+      "heapUsed": 14309192,
+      "external": 2266512,
+      "arrayBuffers": 16795
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.0986328125,
+      3.08544921875,
+      4.18798828125
+    ],
+    "uptime": 525988
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js",
+      "function": "Route.<computed> [as post]",
+      "line": 216,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js",
+      "function": "Function.proto.<computed> [as post]",
+      "line": 521,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 8,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/payment.routes.ts",
+      "function": null,
+      "line": 8,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ]
+}
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/payment.routes.ts:8:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-8772932667462896.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+2025-01-25 23:09:49 [error]: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/payment.routes.ts:8:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 23:09:49 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 75443,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 82378752,
+      "heapTotal": 35094528,
+      "heapUsed": 14871176,
+      "external": 2266512,
+      "arrayBuffers": 16795
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.0986328125,
+      3.08544921875,
+      4.18798828125
+    ],
+    "uptime": 525988
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js",
+      "function": "Route.<computed> [as post]",
+      "line": 216,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js",
+      "function": "Function.proto.<computed> [as post]",
+      "line": 521,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 8,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/payment.routes.ts",
+      "function": null,
+      "line": 8,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ]
+}
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/payment.routes.ts:8:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-7814838866517146.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+2025-01-25 23:09:49 [error]: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/payment.routes.ts:8:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13) {
+  "error": {},
+  "exception": true,
+  "date": "Sat Jan 25 2025 23:09:49 GMT-0500 (Eastern Standard Time)",
+  "process": {
+    "pid": 75444,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/apas/CascadeProjects/multimodule-webapp/backend",
+    "execPath": "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+    "version": "v20.18.2",
+    "argv": [
+      "/Users/apas/.nvm/versions/node/v20.18.2/bin/node",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 81133568,
+      "heapTotal": 36143104,
+      "heapUsed": 14454848,
+      "external": 2266512,
+      "arrayBuffers": 16795
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.0986328125,
+      3.08544921875,
+      4.18798828125
+    ],
+    "uptime": 525988
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js",
+      "function": "Route.<computed> [as post]",
+      "line": 216,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js",
+      "function": "Function.proto.<computed> [as post]",
+      "line": 521,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 8,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/payment.routes.ts",
+      "function": null,
+      "line": 8,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1469,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1548,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ]
+}
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/route.js:216:15)
+    at Function.proto.<computed> [as post] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/Users/apas/CascadeProjects/multimodule-webapp/backend/src/routes/payment.routes.ts:8:8)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._compile (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/source-map-support/source-map-support.js:521:25)
+    at Module.m._compile (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/9l/7352dtf10t13y78ff31sxmqc0000gn/T/ts-node-dev-hook-04797490281443362.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/apas/CascadeProjects/multimodule-webapp/backend/node_modules/ts-node-dev/lib/hook.js:63:13)

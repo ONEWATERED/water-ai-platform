@@ -51,50 +51,54 @@ export default function MultimediaPage() {
 
   if (!user) {
     return (
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-4">Multimedia</h1>
-        <p>Please log in to access our multimedia content.</p>
+      <div className="min-h-screen bg-gray-900 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl font-bold text-white mb-4">Multimedia</h1>
+          <p className="text-gray-400">Please log in to access our multimedia content.</p>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">Multimedia Content</h1>
-      {media.map(item => (
-        <div key={item.id} className="bg-white shadow-md rounded-lg p-6 mb-4">
-          <h2 className="text-2xl font-semibold mb-2">{item.title}</h2>
-          {item.type === 'YouTube Video' ? (
-            <div>
-              <div className="flex justify-between text-gray-600 mb-2">
-                <span>Channel: {item.channel}</span>
-                <span>Duration: {item.duration}</span>
+    <div className="min-h-screen bg-gray-900 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-3xl font-bold text-white mb-8">Multimedia Content</h1>
+        {media.map(item => (
+          <div key={item.id} className="bg-gray-800 rounded-lg p-6 mb-6 hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-200">
+            <h2 className="text-2xl font-semibold text-white mb-2">{item.title}</h2>
+            {item.type === 'YouTube Video' ? (
+              <div>
+                <div className="flex justify-between text-gray-400 mb-2">
+                  <span>Channel: {item.channel}</span>
+                  <span>Duration: {item.duration}</span>
+                </div>
+                <p className="mb-4 text-gray-400">{item.description}</p>
+                <div className="bg-gray-700 h-64 flex items-center justify-center mb-4 rounded-lg">
+                  <p className="text-gray-400">YouTube Video Placeholder</p>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-gray-500">Type: {item.type}</span>
+                  <button className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
+                    Watch Video
+                  </button>
+                </div>
               </div>
-              <p className="mb-4">{item.description}</p>
-              <div className="bg-gray-200 h-64 flex items-center justify-center mb-4">
-                <p className="text-gray-600">YouTube Video Placeholder</p>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-sm text-gray-500">Type: {item.type}</span>
-                <button className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">
-                  Watch Video
+            ) : (
+              <div>
+                <p className="text-gray-400 mb-2">Type: {item.type}</p>
+                <p className="mb-2 text-gray-400">{item.description}</p>
+                <div className="mt-4 text-sm text-gray-500">
+                  Duration: {item.duration}
+                </div>
+                <button className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
+                  Play
                 </button>
               </div>
-            </div>
-          ) : (
-            <div>
-              <p className="text-gray-600 mb-2">Type: {item.type}</p>
-              <p className="mb-2">{item.description}</p>
-              <div className="mt-4 text-sm text-gray-500">
-                Duration: {item.duration}
-              </div>
-              <button className="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
-                Play
-              </button>
-            </div>
-          )}
-        </div>
-      ))}
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

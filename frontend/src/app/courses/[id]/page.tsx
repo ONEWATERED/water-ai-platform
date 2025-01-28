@@ -43,7 +43,7 @@ interface CourseDetail {
 export default function CourseDetailPage({ 
   params 
 }: { 
-  params: { courseId: string } 
+  params: { id: string } 
 }) {
   const [course, setCourse] = useState<CourseDetail | null>(null);
   const [loading, setLoading] = useState(true);
@@ -54,7 +54,7 @@ export default function CourseDetailPage({
   useEffect(() => {
     const fetchCourseDetail = async () => {
       try {
-        const response = await axios.get(`/api/courses/${params.courseId}`);
+        const response = await axios.get(`/api/courses/${params.id}`);
         setCourse(response.data);
         setLoading(false);
       } catch (err: any) {
@@ -64,7 +64,7 @@ export default function CourseDetailPage({
     };
 
     fetchCourseDetail();
-  }, [params.courseId]);
+  }, [params.id]);
 
   if (loading) {
     return (
@@ -254,13 +254,13 @@ export default function CourseDetailPage({
 
         {/* Add Reviews Section */}
         <div className="mt-12">
-          <CourseReviews courseId={params.courseId} />
+          <CourseReviews courseId={params.id} />
         </div>
       </div>
 
       {/* Enrollment Modal */}
       <CourseEnrollmentModal 
-        courseId={params.courseId}
+        courseId={params.id}
         courseTitle={course.title}
         price={course.price}
         isOpen={isEnrollmentModalOpen}
